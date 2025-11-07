@@ -2,6 +2,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <layout_shift.dtsi>
+
 
 &mt {
     flavor = "balanced";
@@ -24,6 +26,10 @@
     //     tap-ms = <5>;
     // };
 };
+
+CONFIG_LAYOUT_SHIFT_TARGET_JIS=y 
+
+
 
 / {
     combos {
@@ -78,6 +84,16 @@
     keymap {
         compatible = "zmk,keymap";
 
+        default_layer {
+            bindings = <
+                &kpls EQUAL  
+                &tog_ls       
+                &tog_ls_on    
+                &tog_ls_off  
+            >;
+        };
+    };
+};
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R             &kp T                                            &kp Y        &kp U  &lt 5 I    &kp O    &lt 6 P

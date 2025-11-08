@@ -99,7 +99,7 @@
 &kp Q             &kp W         &kp E         &kp R             &kp T                                            &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F             &kp G        &to 6                &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp COLON
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V             &kp B        &kp SQT              &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_HENKAN  &lt 2 SPACE  &to_layer_0 TAB      &kp BACKSPACE  &lt 4 ENTER                             &kp DELETE
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_HENKAN  &lt 2 SPACE  &to_layer_0 TAB      &kp BACKSPACE  &lt 3 ENTER                             &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -123,24 +123,24 @@
             >;
         };
 
-        MOUSE {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                            &trans               &trans    &kp PAGE_UP    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans        &kp LC(LS(TAB))      &mkp MB1  &mkp MB3       &mkp MB2  &kp LC(TAB)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans               &trans    &kp PAGE_DOWN  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LA(LEFT)  &kp LA(RIGHT_ARROW)                                     &trans
-            >;
-        };
-
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                           &trans           &kp LS(LC(TAB))  &kp PAGE_UP    &kp LC(TAB)    &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &kp K_MUTE  &kp LC(LS(TAB))  &kp K_PASTE      &kp K_COPY     &kp K_CUT      &kp LC(TAB)
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans      &trans           &kp LA(LEFT)     &kp PAGE_DOWN  &kp LA(RIGHT)  &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans      &trans                                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+        };
+
+        MOUSE {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &kp PAGE_UP    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3       &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &kp PAGE_DOWN  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                     &trans
+            >;
         };
 
         SCROLL {

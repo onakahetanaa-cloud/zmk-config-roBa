@@ -99,7 +99,7 @@
 &kp A             &kp S         &kp D         &kp F             &kp G        &to 6                &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp COLON
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V             &kp B        &kp SQT              &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_HENKAN  &lt 2 SPACE  &to_layer_0 TAB      &kp BACKSPACE  &lt 3 ENTER                             &kp DELETE
->;
+            >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };

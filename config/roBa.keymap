@@ -69,10 +69,13 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to_layer_0>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
         // Layout-aware key press behavior alias
+
         kpls: layout_shift_key_press {
             compatible = "zmk,behavior-layout-shift-key-press";
             #binding-cells = <1>;
@@ -81,16 +84,19 @@
         };
 
         // Layout-aware mod-tap behavior alias
+
         mtls: layout_shift_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&kpls>, <&kpls>;
+
             display-name = "Mod-Tap with Layout Shift";
         };
 
         // Layout shift toggle behaviors
+
         tog_ls: toggle_layout_shift {
             compatible = "zmk,behavior-layout-shift-toggle";
             #binding-cells = <0>;
@@ -114,8 +120,7 @@
             label = "LAYOUT_SHIFT_TOGGLE_OFF";
             display-name = "Toggle Layout Shift Off";
         };
-     };
-
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -125,7 +130,7 @@
 &kp Q             &kp W         &kp E         &kp R             &kp T                                            &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F             &kp G        &to 6                &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp COLON
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V             &kp B        &kp SQT              &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_HENKAN  &lt 2 SPACE  &to_layer_0 TAB      &kp BACKSPACE  &lt 3 ENTER                             &tog_ls
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_HENKAN  &lt 2 SPACE  &to_layer_0 TAB      &kp BACKSPACE  &lt 3 ENTER                             &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;

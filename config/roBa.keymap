@@ -101,14 +101,6 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_HENKAN  &lt 2 SPACE  &to_layer_0 TAB      &kp BACKSPACE  &lt 3 ENTER                             &kp DELETE
 >;
 
-        default_layer {
-            bindings = <
-                &kpls EQUAL    // 通常は = を出力するが、JISレイアウトでは _ (JISレイアウトでの = に対応)を出力する
-                &tog_ls        // レイアウトシフトのオン/オフを切り替える
-                &tog_ls_on     // レイアウトシフトをオンにする
-                &tog_ls_off    // レイアウトシフトをオフにする
-            >;
-
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 

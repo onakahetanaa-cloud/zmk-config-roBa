@@ -75,7 +75,7 @@
         // Layout-aware key press behavior alias
         kpls: layout_shift_key_press {
             compatible = "zmk,behavior-layout-shift-key-press";
-            #binding-cells = <1>;
+            #binding-cells = <1><2>;
             label = "LAYOUT_SHIFT_KEY_PRESS";
             display-name = "Key Press with Layout Shift";
         };

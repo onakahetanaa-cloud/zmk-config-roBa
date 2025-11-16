@@ -1,5 +1,6 @@
 manifest:
   version: 0.13
+
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -8,7 +9,7 @@ manifest:
     - name: onakahetanaa-cloud
       url-base: https://github.com/onakahetanaa-cloud
 
-projects:
+  projects:
     - name: zmk
       remote: zmkfirmware
       revision: main

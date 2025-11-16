@@ -5,10 +5,10 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: kot149
       url-base: https://github.com/kot149
-    - name: badjeff
-      url-base: https://github.com/badjeff
+    - name: onakahetanaa-cloud
+      url-base: https://github.com/onakahetanaa-cloud
 
-  projects:
+projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
@@ -19,7 +19,7 @@ manifest:
       revision: v1
 
     - name: zmk-pmw3610-driver
-      remote: badjeff
+      remote: onakahetanaa-cloud
       revision: main
       path: zmk-pmw3610-driver
 

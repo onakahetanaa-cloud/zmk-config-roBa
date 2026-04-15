@@ -19,6 +19,11 @@ manifest:
       remote: kot149
       revision: v1
 
+- name: zmk
+  remote: zmkfirmware
+  revision: v0.3   # main → v0.3
+  import: app/west.yml
+
 #    - name: zmk-pmw3610-driver
 #      remote: onakahetanaa-cloud
 #      revision: main

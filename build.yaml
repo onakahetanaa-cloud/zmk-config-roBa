@@ -26,7 +26,6 @@ include:
   - board: seeeduino_xiao_ble
     shield: settings_reset
 
-uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
 #include:
 #  - board: xiao_ble/nrf52840/zmk
 #    shield: roBa_R

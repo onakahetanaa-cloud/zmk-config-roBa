@@ -8,9 +8,7 @@
     quick-tap-ms = <0>;
 };
 
-&trackball {
-    scroll-layers = <5>;
-};
+&trackball { scroll-layers = <5>; };
 
 / {
     combos {
@@ -44,6 +42,11 @@
         screenshot {
             bindings = <&kp RG(RS(S))>;
             key-positions = <18 19>;
+        };
+
+        middleclick {
+            bindings = <&mkp MB3>;
+            key-positions = <20 18 19>;
         };
     };
 

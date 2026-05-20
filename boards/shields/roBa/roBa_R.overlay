@@ -31,6 +31,10 @@
     };
 };
 
+&mkp_input_listener {
+    input-processors = <&my_temp_layer 4 700>;
+};
+
 &pinctrl {
     spi0_default: spi0_default {
         group1 {

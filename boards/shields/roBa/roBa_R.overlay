@@ -1,5 +1,5 @@
 #include "roBa.dtsi"
-#include <input/processors.dtsi>  // ADDED
+#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -15,15 +15,13 @@
         ;
 };
 
-// ADDED
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
     excluded-positions = 
-        18  // J
-        19  // K
-        21  // ;
-        34  // Ctrl
-        // TODO: mkp MB1, MB2, MB3のpositionをここに追加
+        18
+        19
+        21
+        34
     >;
 };
 
@@ -32,7 +30,7 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 4 700>;  // ADDED
+        input-processors = <&zip_temp_layer 4 700>;
     };
 };
 

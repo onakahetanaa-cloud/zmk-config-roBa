@@ -70,6 +70,7 @@
         to_layer_0 {
             bindings = <&to 0>;
             key-positions = <26 27>;
+            layers = <0 1 2 3 6>;
         };
     };
 

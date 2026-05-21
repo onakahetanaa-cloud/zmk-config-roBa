@@ -66,6 +66,11 @@
             key-positions = <25 26>;
             layers = <0 1 2 3 6>;
         };
+
+        to_layer_0 {
+            bindings = <&to 0>;
+            key-positions = <26 27>;
+        };
     };
 
     macros {

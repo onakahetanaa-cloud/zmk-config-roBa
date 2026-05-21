@@ -52,16 +52,19 @@
         to_layer_1 {
             bindings = <&to 1>;
             key-positions = <23 26>;
+            layers = <0 2 1 3 6>;
         };
 
         to_layer_2 {
             bindings = <&to 2>;
             key-positions = <24 26>;
+            layers = <0 1 2 3 6>;
         };
 
         to_layer_3 {
             bindings = <&to 3>;
             key-positions = <25 26>;
+            layers = <0 1 2 3 6>;
         };
     };
 

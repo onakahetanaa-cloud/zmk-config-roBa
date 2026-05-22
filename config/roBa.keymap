@@ -76,7 +76,7 @@
 
         to_layer_3_r {
             bindings = <&tog 3>;
-            key-positions = <18 19>;
+            key-positions = <19 20>;
         };
     };
 

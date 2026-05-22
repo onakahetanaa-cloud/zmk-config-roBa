@@ -47,6 +47,7 @@
         middleclick {
             bindings = <&mkp MB3>;
             key-positions = <20 18 19>;
+            layers = <4>;
         };
 
         to_layer_1 {
@@ -71,6 +72,11 @@
             bindings = <&to 0>;
             key-positions = <26 27>;
             layers = <0 1 2 3 6>;
+        };
+
+        to_layer_3_r {
+            bindings = <&tog 3>;
+            key-positions = <18 19>;
         };
     };
 

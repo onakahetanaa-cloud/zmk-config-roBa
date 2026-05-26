@@ -63,7 +63,7 @@
         };
 
         to_layer_3 {
-            bindings = <&to 3>;
+            bindings = <&tog 3>;
             key-positions = <25 26>;
             layers = <0 1 2 3 6>;
         };
